@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: url(gray.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+.container{
+  width: 80%; 
+  min-width: 320px;
+  max-width: 640px;
+  margin: 10px auto; padding: 5px 0 15px;
+  text-align: center; 
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 16px;
+}
+h2{color: palevioletred; }
+h1{color: black; }
+
+/*00들의 크기가 인라인 ->  인라인 블록으로 바꾸고  width 조정 */
+
+h1 > span {
+  display: inline-block;
+  width: 50px;
+}
+button{
+  color: darkblue;
+  background-color: lightgray;
+  font-size: 9px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button:active{
+  color: lightblue;
+  background-color: black;
+}
+
+
